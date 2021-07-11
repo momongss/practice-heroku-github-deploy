@@ -1,0 +1,4 @@
+mixin loginButton({ iconSrc, iconWidth, text })
+    button.login-button(type='button')
+        img(src=`/images${iconSrc}`, alt="logo", width=iconWidth)
+        span=`${text} 로그인`

@@ -1,0 +1,52 @@
+.arrow-button {
+  cursor: pointer;
+  width: 100%;
+  padding: 18px 20px;
+  background-color: var(--white-color);
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.arrow-button-text {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-button-text .icon-img {
+  width: 25px;
+  margin-right: 7px;
+}
+
+.arrow-button .arrow-img {
+  width: 10px;
+}
+
+.arrow-button-title {
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.arrow-button-title .new-img {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.arrow-button-desc {
+  color: var(--grey-text-color);
+  float: left;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.arrow-button.big .arrow-button-text .icon-img {
+  width: 45px;
+}
+
+.arrow-button.big .arrow-button-title {
+  font-size: 17px;
+}

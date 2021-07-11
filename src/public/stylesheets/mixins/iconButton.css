@@ -1,0 +1,22 @@
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  border: none;
+  padding: 15px;
+}
+
+.icon-button .icon-img {
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+.icon-button-desc {
+  color: var(--grey-text-color);
+  font-size: 12px;
+  font-weight: 700;
+}

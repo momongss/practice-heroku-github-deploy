@@ -1,0 +1,26 @@
+extends layouts/main
+include mixins/nav
+include mixins/userInfoWrapper
+
+block css
+  link(rel="stylesheet", href="/stylesheets/signUpInfo.css")
+
+block title
+  title= '회원가입'
+
+block script
+  script(type='module' src='/javascripts/signUpInfo.js')
+
+block content
+  nav
+    + nav({ title: '회원가입', left: 'back', right: 'complete' })
+  main.sign-up-main
+    .email-container
+      .email-wrapper
+        + userInfoWrapper({title: '이메일', infoName: 'email'})
+      button.check-email
+        span 중복확인
+    .toggle-area
+      + userInfoWrapper({title: '닉네임', infoName: 'nick-name'})
+      + userInfoWrapper({title: '비밀번호', infoName: 'password'})
+      + userInfoWrapper({title: '생년월일', infoName: 'birthDate'})

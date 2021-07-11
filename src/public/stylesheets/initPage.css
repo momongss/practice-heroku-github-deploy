@@ -1,0 +1,36 @@
+.banner-img {
+  width: 100%;
+}
+
+.init-page-main .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.init-page-main .campaign {
+  margin: 10px 0;
+}
+
+.welcome-area {
+  width: 100%;
+  padding: 18px 20px;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.welcome-area .icon-img {
+  width: 45px;
+  margin-right: 7px;
+}
+
+.welcome-area span {
+  font-size: 17px;
+  color: grey;
+}
+
+.welcome-area span.point {
+  color: var(--main-color);
+}

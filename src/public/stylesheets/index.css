@@ -1,0 +1,39 @@
+/*
+* import mixins css
+*/
+@import url(./mixins/nav.css);
+@import url(./mixins/arrowButton.css);
+@import url(./mixins/iconButton.css);
+@import url(./mixins/loginInput.css);
+@import url(./mixins/loginButton.css);
+@import url(./mixins/squareButton.css);
+@import url(./mixins/agreeBox.css);
+@import url(./mixins/userInfoWrapper.css);
+
+:root {
+  --main-color: #2ac1bc;
+  --bg-color: #f6f6f6;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --grey-text-color: #a4a4a4;
+  --light-grey-text-color: #d8d8d8;
+  --dark-grey-text-color: #505050;
+  --grey-bg-color: #e2e2e2;
+  --error-color: #ff3333;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+extends layouts/main
+include mixins/nav
+include mixins/loginInput
+include mixins/squareButton
+include mixins/loginButton
+
+block css
+  link(rel="stylesheet", href="/stylesheets/loginPage.css")
+
+block title
+  title= '로그인하기'
+
+block script
+  script(type='module' src='/javascripts/login.js')
+
+block content
+  .login-page
+    nav
+      + nav({ left: 'close' })
+    main.login-page-main
+      form.login-form
+        .login-form-input
+          + loginInput({ type: 'text', name: 'email', placeholder: '아이디 또는 이메일' })
+          + loginInput({ type: 'password', name: 'pwd', placeholder: '비밀번호' })
+        .login-form-btn
+          + squareButton({ text: '로그인' })
+      .find-info
+        .find-info-div 아이디 찾기
+        |     |
+        .find-info-div 비밀번호 찾기
+    footer.login-page-footer
+      + loginButton({ iconSrc: '/facebook.png', iconWidth: '8px', text: '페이스북으로' })
+      + loginButton({ iconSrc: '/naver.png', iconWidth: '12px', text: '네이버로' })
+      + loginButton({ iconSrc: '/apple.png', iconWidth: '12px', text: 'Apple로' })
+      .link-to-signup 
+        span 혹시, 배달의 민족이 처음이신가요? 
+        a(href="javascript:void(0)") 회원가입

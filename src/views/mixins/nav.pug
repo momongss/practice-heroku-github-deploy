@@ -1,0 +1,13 @@
+mixin nav({ title, left, right })
+    .nav
+        .nav-left
+            if left === "back"
+                img.icon-left(src="/images/back.png", alt="back")
+            else if left === "close"
+                img.icon-left(src="/images/close.png", alt="close")
+        .nav-title= title
+        .nav-right
+            if right === "next"
+                span 다음
+            else if right === "complete"
+                span 완료

@@ -1,0 +1,6 @@
+mixin loginInput({ type, name, placeholder })
+    .login-input
+        input(type=type, name=name, placeholder=placeholder)
+        .helper-text
+            span.empty 항목을 입력하세요.
+            span.invalid 아이디와 비밀번호를 다시 확인하세요.

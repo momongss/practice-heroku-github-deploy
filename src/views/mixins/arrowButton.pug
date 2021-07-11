@@ -1,0 +1,12 @@
+mixin arrowButton({ iconSrc, title, desc, isNew, titleColor, big })
+    button.arrow-button(type='button' class=`${big ? 'big' : ''}`)
+        .arrow-button-text
+            if iconSrc 
+                img.icon-img(src=`/images${iconSrc}` alt='icon')
+            div
+                .arrow-button-title(style=`${titleColor ? `color:${titleColor}`: ''}`)= title 
+                    if isNew 
+                        img.new-img(src='/images/new.png' alt='new')
+                if desc
+                    .arrow-button-desc= desc
+        img.arrow-img(src='/images/arrow.png' alt='arrow')

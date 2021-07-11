@@ -1,0 +1,35 @@
+extends layouts/main
+include mixins/nav
+include mixins/agreeBox
+include mixins/squareButton
+
+block css
+  link(rel="stylesheet", href="/stylesheets/signUpAgree.css")
+
+block title
+  title= '회원가입'
+
+block script
+  script(type='module' src='/javascripts/signUpAgree.js')
+
+block content
+  nav
+    + nav({ title: "회원가입", left: "close" })
+  main.sign-up-main
+    .welcome-sign
+        .line1 어서오세요
+        .line2 약관동의가 필요해요
+    + agreeBox({ text: "전체동의", option: "all" })
+    .bar
+    + agreeBox({ text: "배달의 민족 이용약관 동의", details: "true", option: "normal" })
+    + agreeBox({ text: "전자금융거래 이용약관 동의", details: "true", option: "normal" })
+    + agreeBox({ text: "개인정보 수집이용 동의", details: "true", option: "normal" })
+    + agreeBox({ text: "개인정보 제3자 제공 동의 (선택)", details: "true", option: "non-essential" })
+    + agreeBox({ text: "마케팅 정보 메일, SMS 수신동의 (선택)", details: "true", option: "non-essential" })
+    .bar
+    .age-select-wrapper
+        img(class="age-old-btn checked" src="/images/age-old-checked.png")
+        img(class="age-young-btn" src="/images/age-young.png")
+
+    .next-btn-wrapper
+        + squareButton({ text: "다음으로" })

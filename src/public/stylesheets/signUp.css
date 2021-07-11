@@ -1,0 +1,10 @@
+.sign-up-main {
+  width: 100%;
+  height: calc(100vh - 60px);
+
+  position: relative;
+
+  background-color: var(--white-color);
+
+  overflow: auto;
+}

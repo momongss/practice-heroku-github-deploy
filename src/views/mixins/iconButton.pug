@@ -1,0 +1,4 @@
+mixin iconButton({ iconSrc, desc })
+    button.icon-button(type='button')
+        img.icon-img(src=`/images${iconSrc}` alt='icon')
+        .icon-button-desc= desc

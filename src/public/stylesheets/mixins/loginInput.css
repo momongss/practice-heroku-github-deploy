@@ -1,0 +1,47 @@
+.login-input {
+  margin-bottom: 15px;
+}
+
+.login-input input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid var(--light-grey-text-color);
+}
+
+.login-input input::placeholder {
+  color: var(--grey-text-color);
+}
+
+.login-input input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--dark-grey-text-color);
+}
+
+.login-input .helper-text {
+  height: 10px;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.login-input .helper-text span {
+  display: none;
+}
+
+.login-input.error input {
+  border-bottom: 1px solid var(--error-color);
+}
+
+.login-input.error .helper-text {
+  color: var(--error-color);
+}
+
+.login-input.error.empty .helper-text span.empty {
+  display: inline;
+}
+
+.login-input.error.invalid .helper-text span.invalid {
+  display: inline;
+}

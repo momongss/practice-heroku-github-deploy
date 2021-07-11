@@ -1,0 +1,7 @@
+mixin agreeBox({ text, checked, details, option })
+    div(class= `agree-box-wrapper`)
+        div(class= `agree-toggle-btn ${option}`)
+            img.box-img(src="/images/checkbox.png")
+            .agree-text= text
+        if details="true"
+            img.details-img(src="/images/arrow.png")

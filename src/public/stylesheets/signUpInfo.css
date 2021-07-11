@@ -1,0 +1,42 @@
+@import url(./signUp.css);
+
+.email-container {
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-end;
+}
+
+.email-wrapper {
+  width: 300px;
+}
+
+.toggle-area {
+  display: none;
+}
+
+.toggle-area.show {
+  display: block;
+}
+
+.check-email {
+  width: 80px;
+  height: 30px;
+
+  position: relative;
+  bottom: 20px;
+
+  color: var(--grey-text-color);
+
+  border: 1px solid var(--grey-text-color);
+  border-radius: 5px;
+
+  background-color: var(--white-color);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+}

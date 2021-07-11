@@ -1,0 +1,11 @@
+mixin userInfoWrapper({ title, infoName })
+  div(class=`user-info-wrapper ${infoName}`)
+    .user-info-title= title
+    .user-info-main
+      .info-input-wrapper
+        input(type='text')
+        .remove-input-btn
+          img(src='/images/remove.png')
+        .valid-sign
+          img(src='/images/check.png')
+    .validation-eval

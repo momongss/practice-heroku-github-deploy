@@ -1,0 +1,26 @@
+extends layouts/main
+include mixins/nav
+include mixins/userInfoWrapper
+
+block css
+  link(rel="stylesheet", href="/stylesheets/signUpPhone.css")
+
+block title
+  title= '회원가입'
+
+block script
+  script(type='module' src='/javascripts/signUpPhone.js')
+
+block content
+  nav
+    + nav({ title: '회원가입', left: 'back', right: 'next' })
+  main.sign-up-main
+    + userInfoWrapper({title: '휴대전화', infoName: 'phone-num'})
+    div(class="before-auth-wrapper show")
+      .certification-wrapper
+        button(class='certification-number-btn')
+          span 인증번호 받기
+    div(class="after-auth-wrapper")
+      + userInfoWrapper({title: '인증번호', infoName: 'auth-num'})
+      div.review-auth-num-btn
+        span 인증번호 다시받기

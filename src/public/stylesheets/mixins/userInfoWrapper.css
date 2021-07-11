@@ -1,0 +1,93 @@
+.user-info-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  padding: 0 20px;
+
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+.user-info-title {
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--grey-text-color);
+}
+
+.user-info-main {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-input-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  position: relative;
+}
+
+.info-input-wrapper input {
+  all: unset;
+  padding: 10px 0;
+
+  width: 100%;
+
+  border-bottom: 1px solid var(--light-grey-text-color);
+}
+
+.user-info-wrapper.focus input {
+  border-bottom: 1px solid var(--dark-grey-text-color);
+}
+
+.user-info-wrapper.focus .user-info-title {
+  color: var(--dark-grey-text-color);
+}
+
+.info-input-wrapper .remove-input-btn {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 30px;
+
+  padding: 5px 10px;
+}
+
+.info-input-wrapper .remove-input-btn.show {
+  display: block;
+}
+
+.remove-input-btn img {
+  width: 17px;
+}
+
+.info-input-wrapper .valid-sign {
+  position: absolute;
+  right: 0;
+
+  padding: 5px 10px;
+}
+
+.valid-sign img {
+  width: 15px;
+}
+
+.validation-eval {
+  height: 15px;
+  margin-top: 5px;
+  color: var(--error-color);
+  font-size: 12px;
+  font-weight: 600;
+}
