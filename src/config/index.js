@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 export default {
-  port: 8000,
+  port: parseInt(process.env.PORT, 10),
   logs: {
     level: process.env.LOG_LEVEL || 'silly',
   },
